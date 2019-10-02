@@ -1,0 +1,7 @@
+Loaded 0 templates in 0.0s
+Starting page extraction from 2006_Westchester_County_tornado.xml.
+Using 7 extract processes.
+20418181	2006 Westchester County tornado
+20418181	2006 Westchester County tornado
+Finished 7-process extraction of 1 articles in 2.3s (0.4 art/s)
+total of page: 1, total of articl page: 1; total of used articl page: 1
