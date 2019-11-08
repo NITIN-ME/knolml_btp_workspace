@@ -1,8 +1,8 @@
 import re
-
+import json
 
 def readFile(filepath):
-	with open(filepath, 'r') as content_file:
+	with open(filepath, 'r', encoding="utf8") as content_file:
 		content = content_file.read()
 		return content
 
@@ -154,10 +154,12 @@ if __name__ == "__main__":
 	#	extractInformation(item)
 	giveIds(jsonOutputArray, 100)
 	parentify(jsonOutputArray,0)
-
+	f = open('data.json', 'a')
 	for item in jsonOutputArray:
-		print(item)
-		print("\n\n")
+		#pass
+		print(json.dumps(item), file = f)
+
+		#print("\n\n")
 	
 
 
