@@ -2,7 +2,9 @@ import re
 import glob
 import json
 import insert
+import os
 
+cmd = "mongodump --out=C:\\Users\\NITIN\\Desktop\\xml_files_parse\\bson_folder"
 
 def readFile(filepath):
 	with open(filepath, 'r', encoding="utf8") as content_file:
@@ -170,6 +172,9 @@ if __name__ == "__main__":
 		#break
 
 		insert.insert_into_database(name, topic)
+	print("cmd: ", cmd)
+	os.system(cmd)
+
 
 
 
